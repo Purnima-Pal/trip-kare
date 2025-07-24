@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
  /* font-family: "Bodoni Moda", serif; */
 /* popup1_css */
 .popup1{
@@ -71,11 +74,14 @@ max-width: 1000px;
     background: linear-gradient(90deg,rgba(204, 154, 27, 1) 0%, rgba(237, 137, 83, 1) 100%);
     color: #fff;
 }
-.popup_img_wrap{
-    max-width: 500px;
-    height: 500px;
-    overflow: hidden;
+.img_wrap_col{
     margin-right: -50px;
+}
+.popup_img_wrap{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
 }
 .popup_img_wrap img{
     width: 100%;
@@ -116,7 +122,7 @@ max-width: 1000px;
      margin-top: 20px;
 }
 .log_divider{
-    margin: 30px 0;
+    margin: 20px 0;
     text-align: center;
 }
 .log_divider p{
@@ -151,5 +157,44 @@ max-width: 1000px;
     position: absolute;
     right: -20px;
     top: -30px;
+    font-family: "Montserrat", sans-serif;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    color: #393939;
+    font-weight: 700;
+}
+.contact_logo_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.msg_icon{
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #00000017;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s;
+}
+.msg_icon:hover{
+    background: #e5f5ff;
+}
+.msg_icon i{
+    line-height: 1;
+}
+.popup_btn_content1 .log_with_mob{
+    background: transparent;
+    border: none;
+    color: rgb(0, 149, 255);
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 600;
+    padding: 0;
 }
 /* popup1_css */
