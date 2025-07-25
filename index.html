@@ -19,26 +19,27 @@
 </head>
 <body>
     
-  <div class="popup1">
+  <div class="popup1" id="popup1">
    <div class="popup1_body">
      <div class="row align-items-center">
         <div class="col-5 img_wrap_col">
             <div class="popup_img_wrap">
-                <img src="images/popup1_img1.png" alt="img1" class="img-fluid">
+                <img src="images/popup1_img1.png" alt="img1" class="img-fluid" >
+                <img src="images/popup1_img2.png" alt="img2" class="img-fluid">
             </div>
         </div>
         <div class="col-7">
             <div class="popup_1_content">
                 <div class="popup1_btn_tab">
-                    <div class="personal_btn" id="personal_btn">
+                    <div class="personal_btn popup1_tab_btn" id="personal_btn">
                         <button type="button" class="active">Personal Account</button>
                     </div>
-                    <div class="biz_btn" id="biz_btn">
+                    <div class="biz_btn popup1_tab_btn" id="biz_btn">
                         <button type="button">MyBiz Account</button>
                     </div>
                 </div>
-                <div class="popup_btn_content">
-                    <div class="popup_btn_content1">
+                <div class="popup_btn_content_wrappper">
+                    <div class="popup_tab_content popup_btn_content">
                         <form action="">
                             <div class="mobile_login" id="mobile_login">
                             <label for="">Mobile Number</label>
@@ -61,6 +62,23 @@
                             <div class="msg_icon" id="Email_icon"><i class="far fa-envelope"></i></div>
                         </div>
                     </div>
+                    <div class="popup_tab_content popup_btn_content">
+                        <p class="content2_head">Login / Signup</p>
+                          <form action="">
+                           <div class="work_email" id="work_email">
+                            <div class="d-flex justify-content-between align-items-center"><label for="">Work Email</label> <button type="button" class="forgot_btn" id="forgot_btn">forgot login id?</button></div>
+                            
+                            <input type="email" name="" id="" placeholder="Enter Your Email Here">
+                          </div>
+                            <button type="submit" class="conti_btn">Continue</button>
+                        </form>
+                        <p class="content2_small_head">Or use your business account with</p>
+                         <div class="contact_logo_wrapper">
+                            <div class="msg_icon" id="google_icon">
+                                <img src="images/google.png" alt="google" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="popup1_close_btn" id="popup1_close_btn">
                     <button>
@@ -72,6 +90,22 @@
      </div>
    </div>
   </div>
+  <div class="popup2" id="popup2">
+    <div class="popup2_body">
+          <div class="popup_2_content popup_btn_content">
+            <button class="popup2_backbtn" id="popup2_backbtn"><i class="fas fa-arrow-left"></i> Back</button>
+                        <p class="popup2_head">We are here to help</p>
+                        <p class="popup2_para">If your mobile no. is already verified with myBiz, enter it below to login.</p>
+                          <form action="">
+                             <div class="mobile_login" id="mobile_login">
+                            <input type="tel" name="" id="" placeholder="Enter Your Mobile Number">
+                          </div>
+                            <button type="submit" class="conti_btn">Continue</button>
+                        </form>
+                    </div>
+    </div>
+  </div>
+
   <!-- custome-js -->
    <script src="js/main.js"></script>
   <!-- bootstrap-js -->
